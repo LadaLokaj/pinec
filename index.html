@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Stolní tenis Letonice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 2em auto; background: #f7f7f7; color: #222; }
+        header { text-align: center; margin-bottom: 2em; }
+        h1 { color: #136c1c; }
+        section { background: #fff; padding: 1.5em; border-radius: 8px; margin-bottom: 2em; box-shadow: 0 2px 8px #0001;}
+        a.button {
+            display: inline-block; 
+            background: #136c1c; color: white; 
+            padding: 0.7em 1.5em; 
+            border-radius: 4px; 
+            text-decoration: none; 
+            font-weight: bold;
+            margin-top: 1em;
+        }
+        .teams { display: flex; gap: 2em; }
+        .team { flex: 1; }
+        @media (max-width: 600px) {
+            .teams { flex-direction: column; gap: 1em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stolní tenis Letonice</h1>
+        <p>Oficiální stránka oddílu</p>
+    </header>
+
+    <section>
+        <h2>Historie oddílu</h2>
+        <p>
+            Oddíl stolního tenisu Letonice byl založen v roce 2016 sedmi nadšenci. 
+            Letos slavíme již desátou sezónu naší činnosti. Největším úspěchem oddílu bylo vítězství družstva OS2 v sezóně 2024/25, kdy jsme ani jednou nepoznali chuť porážky.
+        </p>
+    </section>
+
+    <section>
+        <h2>Naše družstva</h2>
+        <p>V současnosti máme dvě družstva a celkem 15 členů.</p>
+        <div class="teams">
+            <div class="team">
+                <h3>Družstvo A</h3>
+                <ul>
+                    <li>Jméno 1</li>
+                    <li>Jméno 2</li>
+                    <li>Jméno 3</li>
+                    <li>...</li>
+                </ul>
+            </div>
+            <div class="team">
+                <h3>Družstvo B</h3>
+                <ul>
+                    <li>Jméno 8</li>
+                    <li>Jméno 9</li>
+                    <li>Jméno 10</li>
+                    <li>...</li>
+                </ul>
+            </div>
+        </div>
+        <p><em>(Seznam členů můžete upravit v tomto souboru.)</em></p>
+    </section>
+
+    <section>
+        <h2>Tabulka zápasů</h2>
+        <p>
+            Aktuální tabulku zápasů najdete na webu Českého svazu stolního tenisu:<br>
+            <a class="button" href="https://stis.ping-pong.cz/tabulka/svaz-420711/rocnik-2025/soutez-6293/" target="_blank">Otevřít tabulku</a>
+        </p>
+    </section>
+
+    <footer style="text-align:center; color:#888; margin-top:2em;">
+        &copy; 2025 Oddíl stolního tenisu Letonice
+    </footer>
+</body>
+</html>
