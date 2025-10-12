@@ -1,1 +1,6 @@
 delete this file
+
+bas
+git rm pokus/1.jpg
+git comit -m
+git push
