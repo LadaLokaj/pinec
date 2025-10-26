@@ -1,138 +1,147 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-18">
-    <title>Stolní tenis Letonice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 2em auto; background: #f7f7f7; color: #222; }
-        header { text-align: center; margin-bottom: 2em; }
-        h1 { color: #136c1c; }
-        section { background: #fff; padding: 1.5em; border-radius: 8px; margin-bottom: 2em; box-shadow: 0 2px 8px #0001;}
-        a.button {
-            display: inline-block; 
-            background: #136c1c; color: white; 
-            padding: 0.7em 1.5em; 
-            border-radius: 4px; 
-            text-decoration: none; 
-            font-weight: bold;
-            margin-top: 1em;
-        }
-        .teams { display: flex; gap: 2em; }
-        .team { flex: 1; }
-        img.cover {
-            max-width: 100%;
-            border-radius: 8px;
-            margin: 1em 0;
-            box-shadow: 0 2px 8px #0002;
-        }
-        @media (max-width: 600px) {
-            .teams { flex-direction: column; gap: 1em; }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Stolní tenis Letonice</h1>
-        <p>Oficiální stránka oddílu</p>
-    </header>
-
-     <img src="banda.jpg" alt="kompletní oddíl Letonice" style="max-width:100%;border-radius:8px;margin-top:1em;">
-            </div>
-    <p align="center">
-  
-    <section>
-        <h2>Historie oddílu</h2>
-        <p>
-            Oddíl stolního tenisu Letonice byl založen v roce 2016 sedmi nadšenci. 
-            Letos slavíme již desátou sezónu naší činnosti. Největším úspěchem oddílu bylo vítězství družstva v OS2 sezóna 2024/25, kdy jsme ani jednou nepoznali chuť porážky.
-        </p>
-    </section>
-
-    <section>
-        <h2>Naše družstva</h2>
-        <p>V současnosti máme dvě družstva a celkem 15 členů.Hrajeme dvě soutěže o.s.4 a o.s 1.</p>
-        <div class="teams">
-            <div class="team">
-                <h3>Družstvo A</h3>
-                <ul>
-                    <li>Sykora Daniel </li>
-                    <li>Lokaj David </li>
-                    <li>Juhás Pavel </li>
-                    <li>Skokan Miroslav </li>
-                    <li>Lokaj Ladislav </li>
-                    <li>Lokaj Vít </li>
-               <br><br>
-                    <br><br>
-                </ul>
-                <img src="ateam.jpg" alt="Družstvo A - Stolní tenis Letonice" style="max-width:100%;border-radius:8px;margin-top:1em;">
-            </div>
-            <div class="team">
-                <h3>Družstvo B</h3>
-                <ul>
-                    <li>Lokaj Vít</li>
-                    <li>Fajtl Jakub</li>
-                    <li>Selinger Pavel</li>
-                    <li>Bílá Hana</li>
-                    <li>Marek Vojta</li>
-                    <li>Marek Kamil</li>
-                    <li>Rotrekl Tomáš</li>
-                    <li>Chládek Libor</li>
-                    <li>Lokaj Jiří</li>
-                    <li>Fajtl Tomáš</li>
-                </ul>
-                <img src="bteam.jpg" alt="Družstvo B - Stolní tenis Letonice" style="max-width:100%;border-radius:8px;margin-top:1em;">
-            </div>
-        </div>
-        <p>Trénujeme každou středu od 18 hod. ve školní tělocvičně<p>
-    </section>
-
-    <section>
-        <h2>Tabulka zápasů</h2>
-        <p>
-            Aktuální tabulku zápasů najdete na webu Českého svazu stolního tenisu:<br>
-            <a class="button" href="https://stis.ping-pong.cz/tabulka/svaz-420711/rocnik-2025/soutez-6293/" target="_blank">Otevřít tabulku</a>
-        </p>
-    </section>
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Stolní tenis Letonice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ✅ Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2em;
-      text-align: center;
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 2em auto;
+      background: #f7f7f7;
+      color: #222;
     }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #555;
+    header {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    h1 {
+      color: #136c1c;
+    }
+    section {
+      background: #fff;
+      padding: 1.5em;
+      border-radius: 8px;
+      margin-bottom: 2em;
+      box-shadow: 0 2px 8px #0001;
+    }
+    a.button {
+      display: inline-block;
+      background: #136c1c;
+      color: white;
+      padding: 0.7em 1.5em;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1em;
+    }
+    .teams {
+      display: flex;
+      gap: 2em;
+    }
+    .team {
+      flex: 1;
+    }
+    img.cover {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1em 0;
+      box-shadow: 0 2px 8px #0002;
+    }
+    @media (max-width: 600px) {
+      .teams {
+        flex-direction: column;
+        gap: 1em;
+      }
     }
   </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T7WFS9GHGG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-T7WFS9GHGG');
-</script>
+<body>
+  <header>
+    <h1>Stolní tenis Letonice</h1>
+    <p>Oficiální stránka oddílu</p>
+  </header>
 
-  </p>
-  <p>© 2025 Ladislav Lokaj</p>
-</footer>
+  <img src="banda.jpg" alt="kompletní oddíl Letonice" style="max-width:100%;border-radius:8px;margin-top:1em;">
 
+  <section>
+    <h2>Historie oddílu</h2>
+    <p>
+      Oddíl stolního tenisu Letonice byl založen v roce 2016 sedmi nadšenci. 
+      Letos slavíme již desátou sezónu naší činnosti. Největším úspěchem oddílu bylo vítězství družstva v OS2 sezóna 2024/25, kdy jsme ani jednou nepoznali chuť porážky.
+    </p>
+  </section>
 
+  <section>
+    <h2>Naše družstva</h2>
+    <p>V současnosti máme dvě družstva a celkem 15 členů. Hrajeme dvě soutěže: O.S.4 a O.S.1.</p>
 
-</p>
+    <div class="teams">
+      <div class="team">
+        <h3>Družstvo A</h3>
+        <ul>
+          <li>Sýkora Daniel</li>
+          <li>Lokaj David</li>
+          <li>Juhás Pavel</li>
+          <li>Skokan Miroslav</li>
+          <li>Lokaj Ladislav</li>
+          <li>Lokaj Vít</li>
+        </ul>
+        <img src="ateam.jpg" alt="Družstvo A - Stolní tenis Letonice" style="max-width:100%;border-radius:8px;margin-top:1em;">
+      </div>
 
-    <footer style="text-align:center; color:#888; margin-top:3em;">
-        &copy; 2025 Oddíl stolního tenisu Letonice
-    </footer>
+      <div class="team">
+        <h3>Družstvo B</h3>
+        <ul>
+          <li>Lokaj Vít</li>
+          <li>Fajtl Jakub</li>
+          <li>Selinger Pavel</li>
+          <li>Bílá Hana</li>
+          <li>Marek Vojta</li>
+          <li>Marek Kamil</li>
+          <li>Rotrekl Tomáš</li>
+          <li>Chládek Libor</li>
+          <li>Lokaj Jiří</li>
+          <li>Fajtl Tomáš</li>
+        </ul>
+        <img src="bteam.jpg" alt="Družstvo B - Stolní tenis Letonice" style="max-width:100%;border-radius:8px;margin-top:1em;">
+      </div>
+    </div>
+    <p>Trénujeme každou středu od 18 hod. ve školní tělocvičně.</p>
+  </section>
+
+  <section>
+    <h2>Tabulka zápasů</h2>
+    <p>
+      Aktuální tabulku zápasů najdete na webu Českého svazu stolního tenisu:<br>
+      <a class="button" href="https://stis.ping-pong.cz/tabulka/svaz-420711/rocnik-2025/soutez-6293/" target="_blank">Otevřít tabulku</a>
+    </p>
+  </section>
+
+  <footer style="text-align:center; color:#555; margin-top:3em; font-size:0.9em;">
+    <p>© 2025 Ladislav Lokaj – Stolní tenis Letonice</p>
+
+    <!-- 👁️ Počítadlo návštěv -->
+    <p>
+      Návštěvy celkem:
+      <img src="https://visitor-badge.laobi.icu/badge?page_id=ladalokaj.pinec&left_color=gray&right_color=green" 
+           alt="Počítadlo návštěv" 
+           style="vertical-align:middle;">
+    </p>
+
+    <p style="font-size:0.8em; color:#888;">Denní a týdenní statistiky sleduj v Google Analytics.</p>
+  </footer>
 </body>
 </html>
