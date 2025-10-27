@@ -132,13 +132,24 @@
     </p>
   </section>
 
-  <footer style="text-align:center; color:#555; margin-top:3em; font-size:0.9em;">
-    <p>© 2025 Ladislav Lokaj – Stolní tenis Letonice</p>
+<div id="counter" style="text-align:center; margin-top:30px; font-family:sans-serif;">
+  Načítám počet návštěv...
+</div>
 
-    <footer style="text-align:center; font-family:sans-serif; margin-top:30px;">
-  <p>Děkujeme za návštěvu!</p>
-  <img src="https://simplecounter.asrvd.me/count.svg?user=ladalokaj-pinec&label=Počet návštěv:" alt="Počítadlo návštěv">
-</footer>
+<script>
+const counterUrl = "https://api.counterapi.dev/v1/ladalokaj-pinec/navstevy";
+
+fetch(counterUrl)
+  .then(response => response.json())
+  .then(data => {
+    document.getElementById("counter").textContent = "Počet návštěv: " + data.count;
+  })
+  .catch(error => {
+    document.getElementById("counter").textContent = "Nelze načíst počítadlo 😕";
+    console.error(error);
+  });
+</script>
+
 </body>
 </html>
    
