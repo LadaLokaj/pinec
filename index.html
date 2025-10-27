@@ -136,19 +136,8 @@
   Načítám počet návštěv...
 </div>
 
-<script>
-const counterUrl = "https://api.counterapi.dev/v1/ladalokaj-pinec/navstevy";
+<img src="https://hits.sh/ladalokaj.github.io/pinec.svg?style=for-the-badge&label=Návštěvy&color=007ec6" alt="Počet návštěv">
 
-fetch(counterUrl)
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("counter").textContent = "Počet návštěv: " + data.count;
-  })
-  .catch(error => {
-    document.getElementById("counter").textContent = "Nelze načíst počítadlo 😕";
-    console.error(error);
-  });
-</script>
 
 </body>
 </html>
