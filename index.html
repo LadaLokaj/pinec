@@ -5,6 +5,16 @@
   <title>Stolní tenis Letonice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7WFS9GHGG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T7WFS9GHGG');
+  </script>
+  <!-- Konec Google Analytics -->
+
   <style>
     body {
       font-family: sans-serif;
@@ -90,8 +100,7 @@
           <li>Lokaj Ladislav</li>
           <li>Lokaj Vít</li>
         </ul>
-         <br><br>
-                    <br><br>
+        <br><br><br><br>
         <img src="ateam.jpg" alt="Družstvo A - Stolní tenis Letonice" style="max-width:100%;border-radius:8px;margin-top:1em;">
       </div>
 
@@ -109,7 +118,6 @@
           <li>Lokaj Jiří</li>
           <li>Fajtl Tomáš</li>
         </ul>
-      
         <img src="bteam.jpg" alt="Družstvo B - Stolní tenis Letonice" style="max-width:100%;border-radius:8px;margin-top:1em;">
       </div>
     </div>
@@ -127,14 +135,26 @@
   <footer style="text-align:center; color:#555; margin-top:3em; font-size:0.9em;">
     <p>© 2025 Ladislav Lokaj – Stolní tenis Letonice</p>
 
-    <a href="https://www.toplist.cz" id="toplistcz52680876" title="TOPlist"><noscript><img src="https://toplist.cz/count.asp?id=52680876&logo=mc&njs=1" border="0"
-alt="TOPlist" width="88" height="60"/></noscript><script language="JavaScript">
-(function(d,e,s) {d.getElementById('toplistcz52680876').innerHTML='<img src="https://toplist.cz/count.asp?id=52680876&logo=mc&http='+
-e(d.referrer)+'&t='+e(d.title)+'&l='+e(d.URL)+'&wi='+e(s.width)+'&he='+e(s.height)+'&cd='+
-e(s.colorDepth)+'" width="120" height="90" border="0" alt="Pinec" />';
-}(document,encodeURIComponent,window.screen))
-</script></a>
-    </p>
+    <!-- TOPlist měření -->
+    <div id="toplistcz52680876" style="text-align:center;margin-top:1em;">
+      <noscript>
+        <a href="https://www.toplist.cz">
+          <img src="https://toplist.cz/count.asp?id=52680876&logo=mc&njs=1" border="0" alt="TOPlist" width="88" height="60"/>
+        </a>
+      </noscript>
+    </div>
+    <script>
+      (function(d,e,s){
+        d.getElementById('toplistcz52680876').innerHTML =
+          '<a href="https://www.toplist.cz">' +
+          '<img src="https://toplist.cz/count.asp?id=52680876&logo=mc&http=' + e(d.referrer) +
+          '&t=' + e(d.title) + '&l=' + e(d.URL) + '&wi=' + e(s.width) +
+          '&he=' + e(s.height) + '&cd=' + e(s.colorDepth) +
+          '" width="88" height="60" border="0" alt="TOPlist" />' +
+          '</a>';
+      }(document, encodeURIComponent, window.screen));
+    </script>
+    <!-- Konec TOPlist -->
 
     <p style="font-size:0.8em; color:#888;">Denní a týdenní statistiky sleduj v Google Analytics.</p>
   </footer>
