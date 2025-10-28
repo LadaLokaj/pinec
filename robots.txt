@@ -1,6 +1,4 @@
 # Povolit indexaci všem vyhledávačům
 User-agent: *
-Allow: /
-
-# Odkaz na mapu webu
+Disallow:
 Sitemap: https://ladalokaj.github.io/pinec/sitemap.xml
